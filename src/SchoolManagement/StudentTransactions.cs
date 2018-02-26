@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace WindowsFormsApplication2
+namespace SchoolManagement
 {
     class StudentTransactions
     {
@@ -39,6 +39,11 @@ namespace WindowsFormsApplication2
         public void deleteStudent(int studentID)
         {
             db.executeSql("DELETE FROM Students WHERE StudentID = " + studentID + "");
+        }
+
+        public DataSet getStudentCount()
+        {
+            return db.list("SELECT COUNT(studentID) FROM Students");
         }
         
     }

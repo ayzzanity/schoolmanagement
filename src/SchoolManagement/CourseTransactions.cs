@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication2
+namespace SchoolManagement
 {
     class CourseTransactions
     {
@@ -30,7 +30,26 @@ namespace WindowsFormsApplication2
 
         public DataSet getCourseByCode(string coursecode)
         {
-            return db.list("SELECT * FROM Courses WHERE coursecode = '" + coursecode + "' ");
+            return db.list("SELECT courseID FROM Courses WHERE coursecode = '" + coursecode + "' ");
+        }
+
+        public DataSet getCourseByDesc(string desc)
+        {
+            return db.list("SELECT courseID FROM Courses WHERE description LIKE '" + desc + "' ");
+        }
+
+        public DataSet getCourses()
+        {
+            return db.list("SELECT description from Courses");
+        }
+        public DataSet getEnrolledCount()
+        {
+            return db.list("SELECT COUNT(studentID) FROM Students INNER JOIN Courses ON Students.courseID = Courses.courseID");
+        }
+
+        public DataSet getNotEnrolledCount()
+        {
+            return db.list("SELECT COUNT(studentID) FROM Students WHERE Students.courseID = 0");
         }
     }
 }

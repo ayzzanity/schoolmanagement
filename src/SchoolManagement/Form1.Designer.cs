@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace SchoolManagement
 {
     partial class frmStudentProfile
     {

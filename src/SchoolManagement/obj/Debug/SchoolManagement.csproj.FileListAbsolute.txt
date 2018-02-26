@@ -49,8 +49,9 @@ C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\Wind
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\WindowsFormsApplication2.pdb
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\MySql.Data.dll
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
-C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmStudentProfile.resources
-C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmSearchProfile.resources
-C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmEnrollStudent.resources
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmStudentProfile.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmSearchProfile.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmEnrollStudent.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmSubjects.resources

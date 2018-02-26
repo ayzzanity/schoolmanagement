@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Data;
 
-namespace WindowsFormsApplication2
+namespace SchoolManagement
 {
     class DBTransactions
     {

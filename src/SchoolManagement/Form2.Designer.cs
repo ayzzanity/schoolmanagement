@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace SchoolManagement
 {
     partial class frmSearchProfile
     {
@@ -41,6 +41,10 @@
             this.dgvNotEnrolled = new System.Windows.Forms.DataGridView();
             this.tabEnrolled = new System.Windows.Forms.TabPage();
             this.dgvEnrolled = new System.Windows.Forms.DataGridView();
+            this.lblNoStudents = new System.Windows.Forms.Label();
+            this.lblStudentCount = new System.Windows.Forms.Label();
+            this.btnSubjects = new System.Windows.Forms.Button();
+            this.btnStudSubjects = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.tabStudents.SuspendLayout();
             this.tabAll.SuspendLayout();
@@ -81,9 +85,9 @@
             // btnNew
             // 
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(189, 305);
+            this.btnNew.Location = new System.Drawing.Point(243, 325);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(108, 39);
+            this.btnNew.Size = new System.Drawing.Size(90, 30);
             this.btnNew.TabIndex = 18;
             this.btnNew.Text = "NEW";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -92,9 +96,9 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(303, 305);
+            this.btnEdit.Location = new System.Drawing.Point(339, 325);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(108, 39);
+            this.btnEdit.Size = new System.Drawing.Size(90, 30);
             this.btnEdit.TabIndex = 19;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -103,9 +107,9 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(417, 305);
+            this.btnDelete.Location = new System.Drawing.Point(435, 325);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(108, 39);
+            this.btnDelete.Size = new System.Drawing.Size(90, 30);
             this.btnDelete.TabIndex = 20;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -114,9 +118,9 @@
             // btnEnroll
             // 
             this.btnEnroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnroll.Location = new System.Drawing.Point(75, 305);
+            this.btnEnroll.Location = new System.Drawing.Point(147, 325);
             this.btnEnroll.Name = "btnEnroll";
-            this.btnEnroll.Size = new System.Drawing.Size(108, 39);
+            this.btnEnroll.Size = new System.Drawing.Size(90, 30);
             this.btnEnroll.TabIndex = 21;
             this.btnEnroll.Text = "ENROLL";
             this.btnEnroll.UseVisualStyleBackColor = true;
@@ -143,6 +147,7 @@
             this.tabAll.TabIndex = 0;
             this.tabAll.Text = "All Students";
             this.tabAll.UseVisualStyleBackColor = true;
+            this.tabAll.Enter += new System.EventHandler(this.tabAll_Enter);
             // 
             // tabNotEnrolled
             // 
@@ -154,7 +159,7 @@
             this.tabNotEnrolled.TabIndex = 1;
             this.tabNotEnrolled.Text = "Not Enrolled";
             this.tabNotEnrolled.UseVisualStyleBackColor = true;
-            this.tabNotEnrolled.Click += new System.EventHandler(this.tabNotEnrolled_Click);
+            this.tabNotEnrolled.Enter += new System.EventHandler(this.tabNotEnrolled_Enter);
             // 
             // dgvNotEnrolled
             // 
@@ -175,6 +180,7 @@
             this.tabEnrolled.TabIndex = 2;
             this.tabEnrolled.Text = "Enrolled";
             this.tabEnrolled.UseVisualStyleBackColor = true;
+            this.tabEnrolled.Enter += new System.EventHandler(this.tabEnrolled_Enter);
             // 
             // dgvEnrolled
             // 
@@ -185,11 +191,54 @@
             this.dgvEnrolled.Size = new System.Drawing.Size(471, 170);
             this.dgvEnrolled.TabIndex = 17;
             // 
+            // lblNoStudents
+            // 
+            this.lblNoStudents.AutoSize = true;
+            this.lblNoStudents.Location = new System.Drawing.Point(40, 291);
+            this.lblNoStudents.Name = "lblNoStudents";
+            this.lblNoStudents.Size = new System.Drawing.Size(81, 13);
+            this.lblNoStudents.TabIndex = 23;
+            this.lblNoStudents.Text = "No of Students:";
+            // 
+            // lblStudentCount
+            // 
+            this.lblStudentCount.AutoSize = true;
+            this.lblStudentCount.Location = new System.Drawing.Point(117, 291);
+            this.lblStudentCount.Name = "lblStudentCount";
+            this.lblStudentCount.Size = new System.Drawing.Size(46, 13);
+            this.lblStudentCount.TabIndex = 24;
+            this.lblStudentCount.Text = "<count>";
+            // 
+            // btnSubjects
+            // 
+            this.btnSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubjects.Location = new System.Drawing.Point(411, 27);
+            this.btnSubjects.Name = "btnSubjects";
+            this.btnSubjects.Size = new System.Drawing.Size(110, 30);
+            this.btnSubjects.TabIndex = 25;
+            this.btnSubjects.Text = "SUBJECT LIST";
+            this.btnSubjects.UseVisualStyleBackColor = true;
+            this.btnSubjects.Click += new System.EventHandler(this.btnSubjects_Click);
+            // 
+            // btnStudSubjects
+            // 
+            this.btnStudSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudSubjects.Location = new System.Drawing.Point(51, 325);
+            this.btnStudSubjects.Name = "btnStudSubjects";
+            this.btnStudSubjects.Size = new System.Drawing.Size(90, 30);
+            this.btnStudSubjects.TabIndex = 26;
+            this.btnStudSubjects.Text = "SUBJECTS";
+            this.btnStudSubjects.UseVisualStyleBackColor = true;
+            // 
             // frmSearchProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 372);
+            this.Controls.Add(this.btnStudSubjects);
+            this.Controls.Add(this.btnSubjects);
+            this.Controls.Add(this.lblStudentCount);
+            this.Controls.Add(this.lblNoStudents);
             this.Controls.Add(this.tabStudents);
             this.Controls.Add(this.btnEnroll);
             this.Controls.Add(this.btnDelete);
@@ -228,5 +277,9 @@
         private System.Windows.Forms.TabPage tabEnrolled;
         private System.Windows.Forms.DataGridView dgvNotEnrolled;
         private System.Windows.Forms.DataGridView dgvEnrolled;
+        private System.Windows.Forms.Label lblNoStudents;
+        private System.Windows.Forms.Label lblStudentCount;
+        private System.Windows.Forms.Button btnSubjects;
+        private System.Windows.Forms.Button btnStudSubjects;
     }
 }

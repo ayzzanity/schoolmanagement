@@ -8,7 +8,7 @@ using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace WindowsFormsApplication2
+namespace SchoolManagement
 {
     class DBTransMySQL
     {
