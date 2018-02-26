@@ -45,3 +45,12 @@ G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\S
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\WindowsFormsApplication2.exe.config
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\MySql.Data.dll
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmStudentProfile.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmSearchProfile.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmEnrollStudent.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache

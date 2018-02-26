@@ -9,7 +9,9 @@ namespace WindowsFormsApplication2
 {
     class StudentTransactions
     {
-        DBTransactions db = new DBTransactions();
+        DBTransMySQL db = new DBTransMySQL();
+        DBTransactions db1 = new DBTransactions();
+
         public DataSet search(string firstname, string lastname)
         {
             return db.list("SELECT * FROM Students WHERE Firstname LIKE '" + firstname + "%' AND Lastname LIKE '" + lastname + "%'");
@@ -17,7 +19,7 @@ namespace WindowsFormsApplication2
 
         public DataSet search(string searchValue)
         {
-            return db.list("SELECT * FROM Students WHERE Firstname LIKE '" + searchValue  + "%' OR Lastname LIKE '" + searchValue  + "%' OR Middlename LIKE '" + searchValue + "%'");
+            return db.list("SELECT studentID AS 'Student ID', firstname AS 'First Name', middlename as 'Middle Name', lastname AS 'Last Name', age AS 'Age', gender AS 'Gender', admissiondate AS 'Admission Date', Students.courseID as 'Course ID' FROM Students WHERE Firstname LIKE '" + searchValue  + "%' OR Lastname LIKE '" + searchValue  + "%' OR Middlename LIKE '" + searchValue + "%'");
         }
 
         public DataSet getStudentByID(int studentID)
@@ -38,15 +40,6 @@ namespace WindowsFormsApplication2
         {
             db.executeSql("DELETE FROM Students WHERE StudentID = " + studentID + "");
         }
-
-        public void enrollStudent(int studentID, string course, string admissiondate)
-        {
-            db.executeSql("UPDATE Students SET Course = '" + course + "', Admissiondate = '" + admissiondate + "' WHERE StudentID = " + studentID + " ");
-        }
-
-        public DataSet checkNotEnrolled(string searchVal)
-        {
-            return(db.list("SELECT * FROM Students WHERE Firstname LIKE '" + searchVal + "%' OR Lastname LIKE '" + searchVal + "%' AND Course = 'BS %' "));
-        }
+        
     }
 }

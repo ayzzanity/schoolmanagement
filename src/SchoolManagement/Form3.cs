@@ -13,7 +13,10 @@ namespace WindowsFormsApplication2
     public partial class frmEnrollStudent : Form
     {
         public int studentID;
+        public int courseID;
         StudentTransactions st = new StudentTransactions();
+        CourseTransactions ct = new CourseTransactions();
+
         public frmEnrollStudent()
         {
             InitializeComponent();
@@ -28,18 +31,18 @@ namespace WindowsFormsApplication2
 
                 lblUid.Text = ds.Tables[0].Rows[0].ItemArray[0].ToString();
                 lblName.Text = ds.Tables[0].Rows[0].ItemArray[1].ToString() + " " + ds.Tables[0].Rows[0].ItemArray[2].ToString() + " " + ds.Tables[0].Rows[0].ItemArray[3].ToString();
-
-                if ( ds.Tables[0].Rows[0].ItemArray[7].ToString() != "")
-                {
-                    cboCourse.SelectedItem = ds.Tables[0].Rows[0].ItemArray[6].ToString();
-                    dtpEnrolled.Value = Convert.ToDateTime(ds.Tables[0].Rows[0].ItemArray[7].ToString());
-                }
+              
             }
         }
 
         private void btnEnroll_Click(object sender, EventArgs e)
         {
-            st.enrollStudent(studentID, cboCourse.SelectedItem.ToString(), dtpEnrolled.Value.ToShortDateString());
+            DataSet ds = new DataSet();
+
+            ds = ct.getCourseByCode(cboCourse.SelectedItem.ToString());
+            courseID = Convert.ToInt32(ds.Tables[0].Rows[0].ItemArray[0].ToString());
+
+            ct.enrollStudent(studentID, courseID, dtpEnrolled.Value.ToShortDateString());
             MessageBox.Show("Student Enrolled!");
             frmSearchProfile frm = new frmSearchProfile();
             frm.Show();
@@ -52,5 +55,7 @@ namespace WindowsFormsApplication2
             frm.Show();
             this.Hide();
         }
+
+
     }
 }

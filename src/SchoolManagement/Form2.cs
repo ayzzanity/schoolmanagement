@@ -19,6 +19,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
         StudentTransactions st = new StudentTransactions();
+        CourseTransactions ct = new CourseTransactions();
 
           private void LoadStudent()
         {
@@ -27,8 +28,12 @@ namespace WindowsFormsApplication2
             dgvStudents.DataSource = ds.Tables[0];
 
             DataSet ds2 = new DataSet();
-            ds2 = st.checkNotEnrolled(txtSearch.Text);
+            ds = ct.searchNotEnrolled(txtSearch.Text);
             dgvNotEnrolled.DataSource = ds.Tables[0];
+
+            DataSet ds3 = new DataSet();
+            ds3 = ct.searchEnrolled(txtSearch.Text);
+            dgvEnrolled.DataSource = ds3.Tables[0];
         }
 
         private void frmSearchProfile_Load(object sender, EventArgs e)
