@@ -1,0 +1,47 @@
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmStudentProfile.resources
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmSearchProfile.resources
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\User\Documents\DBMS\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmStudentProfile.resources
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmSearchProfile.resources
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+G:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmStudentProfile.resources
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmSearchProfile.resources
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.frmEnrollStudent.resources
+F:\Elective\DBMS Updated\SchoolManagement\WindowsFormsApplication2\bin\Debug\SchoolDB.mdb
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\bin\Debug\WindowsFormsApplication2.exe.config
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\WindowsFormsApplication2.exe
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\WindowsFormsApplication2.pdb
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\bin\Debug\SchoolDB.mdb
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\bin\Debug\WindowsFormsApplication2.exe
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\bin\Debug\WindowsFormsApplication2.pdb
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmStudentProfile.resources
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmSearchProfile.resources
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\WindowsFormsApplication2.frmEnrollStudent.resources
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+G:\Elective\DBMS Updated - Updated\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\WindowsFormsApplication2.pdb
