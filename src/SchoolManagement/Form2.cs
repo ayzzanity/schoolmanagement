@@ -106,5 +106,14 @@ namespace SchoolManagement
             frm.Show();
             this.Hide();
         }
+
+        private void btnStudSubjects_Click(object sender, EventArgs e)
+        {
+
+            frmStudentSubjects frm = new frmStudentSubjects();
+            frm.studentID = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells[0].Value.ToString());
+            frm.Show();
+            this.Hide();
+        }
     }
 }

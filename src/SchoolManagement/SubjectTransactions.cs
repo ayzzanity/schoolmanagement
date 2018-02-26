@@ -14,5 +14,10 @@ namespace SchoolManagement
         {
             return (db.list("SELECT * FROM Subjects INNER JOIN Courses ON Subjects.courseID = Courses.courseID WHERE subjects.courseID LIKE '" + course + "%' AND yearlevel LIKE '"+year+"%' AND semester LIKE '"+sem+"%' "));
         }
+
+        public DataSet getStudentSubject(int studentID)
+        {
+            return (db.list("SELECT subjectcode, subjectname, lec_units, lab_units, schyear, studentsubjects.semester, grade FROM Students INNER JOIN Courses ON Students.courseID = Courses.courseID INNER JOIN Subjects ON Subjects.courseID = Courses.courseID LEFT JOIN studentsubjects ON subjects.subjectID = studentsubjects.subjectID WHERE Students.studentID LIKE '" + studentID + "' "));
+        }
     }
 }

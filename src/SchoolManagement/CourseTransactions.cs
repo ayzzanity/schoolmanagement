@@ -27,6 +27,10 @@ namespace SchoolManagement
             return db.list("SELECT studentID AS 'Student ID', firstname AS 'First Name', middlename as 'Middle Name', lastname AS 'Last Name', age AS 'Age', gender AS 'Gender' FROM Students WHERE Students.courseID = 0 AND (Firstname LIKE '" + searchValue + "%' OR Lastname LIKE '" + searchValue + "%' OR Middlename LIKE '" + searchValue + "%') ");
         }
 
+        public DataSet searchByStudentId(int studentID)
+        {
+            return db.list("SELECT studentID AS 'Student ID', firstname AS 'First Name', middlename as 'Middle Name', lastname AS 'Last Name', age AS 'Age', gender AS 'Gender', admissiondate AS 'Admission Date', Students.courseID as 'Course ID', coursecode AS 'Course', description AS 'Description' FROM Students INNER JOIN Courses ON Students.courseID = Courses.courseID WHERE studentID LIKE '"+studentID+"%' ");
+        }
 
         public DataSet getCourseByCode(string coursecode)
         {

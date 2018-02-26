@@ -55,3 +55,4 @@ C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\Scho
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmSearchProfile.resources
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmEnrollStudent.resources
 C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmSubjects.resources
+C:\Users\stick\Source\Repos\schoolmanagement\src\SchoolManagement\obj\Debug\SchoolManagement.frmStudentSubjects.resources

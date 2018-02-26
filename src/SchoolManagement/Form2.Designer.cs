@@ -229,6 +229,7 @@
             this.btnStudSubjects.TabIndex = 26;
             this.btnStudSubjects.Text = "SUBJECTS";
             this.btnStudSubjects.UseVisualStyleBackColor = true;
+            this.btnStudSubjects.Click += new System.EventHandler(this.btnStudSubjects_Click);
             // 
             // frmSearchProfile
             // 
@@ -248,7 +249,7 @@
             this.Controls.Add(this.txtSearch);
             this.Name = "frmSearchProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form";
+            this.Text = "Student List";
             this.Load += new System.EventHandler(this.frmSearchProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.tabStudents.ResumeLayout(false);
