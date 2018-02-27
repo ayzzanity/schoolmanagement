@@ -17,7 +17,12 @@ namespace SchoolManagement
 
         public DataSet getStudentSubject(int studentID)
         {
-            return (db.list("SELECT subjectcode, subjectname, lec_units, lab_units, schyear, studentsubjects.semester, grade FROM Students INNER JOIN Courses ON Students.courseID = Courses.courseID INNER JOIN Subjects ON Subjects.courseID = Courses.courseID LEFT JOIN studentsubjects ON subjects.subjectID = studentsubjects.subjectID WHERE Students.studentID LIKE '" + studentID + "' "));
+            return (db.list("SELECT subjectcode, subjectname, lec_units, lab_units, schyear, studentsubjects.semester, grade " +
+                            "FROM Students " +
+                            "INNER JOIN Courses ON (Students.courseID = Courses.courseID) "+
+                            "INNER JOIN Subjects ON (Subjects.courseID = Courses.courseID) "+
+                            "LEFT JOIN Studentsubjects ON (Subjects.subjectID = Studentsubjects.subjectID AND Students.studentID = Studentsubjects.studentID) "+
+                            "WHERE Students.studentID LIKE '" + studentID + "' "));
         }
     }
 }

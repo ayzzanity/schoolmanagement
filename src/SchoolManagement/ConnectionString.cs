@@ -13,7 +13,11 @@ namespace SchoolManagement
         }
         public string connString2()
         {
-            return @"Server=192.168.1.50;Database=school;Uid=locksystem;Pwd=adminpass;convert zero datetime=True";
+            //PC
+            //return @"Server=192.168.1.50;Database=school;Uid=locksystem;Pwd=adminpass";
+
+            //Laptop
+            return @"Server=localhost;Database=school;Uid=root;Pwd=";
         }
     }
 }
